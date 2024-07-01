@@ -1,0 +1,42 @@
+{
+  "labels": {
+      "background": 0,
+      "nerve": 1,
+      "left_first_incisor": 2,
+      "left_second_incisor": 3,
+      "left_canine": 4,
+      "left_first_bicuspid": 5,
+      "left_second_bicuspid": 6,
+      "left_first_molar": 7,
+      "left_second_molar": 8,
+      "left_third_molar": 9,
+      "right_first_incisor": 10,
+      "right_second_incisor": 11,
+      "right_canine": 12,
+      "right_first_bicuspid": 13,
+      "right_second_bicuspid": 14,
+      "right_first_molar": 15,
+      "right_second_molar": 16,
+      "right_third_molar": 17,
+      "anomaly": 18
+  },
+  "map": {
+    "31": 2,
+    "32": 3,
+    "33": 4,
+    "34": 5,
+    "35": 6,
+    "36": 7,
+    "37": 8,
+    "38": 9,
+    "41": 10,
+    "42": 11,
+    "43": 12,
+    "44": 13,
+    "45": 14,
+    "46": 15,
+    "47": 16,
+    "48": 17,
+    "50": 18
+  }
+}
