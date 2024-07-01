@@ -1,0 +1,11 @@
+Resample:
+  target: 0.3
+ShiftFromZero:
+Clamp:
+  out_min: 0
+  out_max: 2100
+ZNormalization:
+
+RemoveOutliers:
+
+RescaleIntensity:
