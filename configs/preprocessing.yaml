@@ -1,5 +1,3 @@
-Resample:
-  target: 0.3
 ShiftFromZero:
 Clamp:
   out_min: 0

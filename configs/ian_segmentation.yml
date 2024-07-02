@@ -1,5 +1,5 @@
 # title of the experiment
-title: pulp_single_segmentation
+title: ian_single_segmentation
 # Where to output everything, in this path a folder with
 # the same name as the title is created containing checkpoints,
 # logs and a copy of the config used
@@ -8,16 +8,16 @@ seed: 33
 
 # which experiment to execute: Segmentation or Generation
 experiment:
-  name: Segmentation
+  name: IANSegmentation
 
 data_loader:
   dataset: ./datasets/Pulpy3D
   # which augmentations to use, see: augmentations.yaml
   augmentations: ./configs/augmentation.yml
   preprocessing: ./configs/preprocessing.yaml
-  batch_size: 6
-  max_length: 300
-  samples_per_volume: 30
+  batch_size: 4
+  max_length: 6
+  samples_per_volume: 1
   num_classes: 1
   num_workers: 8
   # shape of a single patch
