@@ -1,8 +1,6 @@
 import json
 from pathlib import Path
 
-import numpy as np
-import torch
 import torchio as tio
 
 from torch.utils.data import DataLoader

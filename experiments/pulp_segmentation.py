@@ -9,7 +9,7 @@ from experiments.experiment import Experiment
 from dataloader.Pulpy import Pulpy
 from dataloader.Transformation import LabelTransformation
 
-class Segmentation(Experiment):
+class PulpSegmentation(Experiment):
 
   def __init__(self, config, debug=False):
     super().__init__(config, debug)
@@ -84,7 +84,6 @@ class Segmentation(Experiment):
 
     epoch_train_loss = sum(losses) / len(losses)
     epoch_iou, epoch_dice, epoch_hd95 = self.evaluator.mean_metric()
-    self.evaluator.class_metric()
 
     self.metrics['Train'] = {
       'iou': epoch_iou,
@@ -151,7 +150,6 @@ class Segmentation(Experiment):
 
       epoch_loss = sum(losses) / len(losses)
       epoch_iou, epoch_dice, epoch_hd95 = self.evaluator.mean_metric()
-      self.evaluator.class_metric()
 
       wandb.log({
           f'Epoch': self.epoch,

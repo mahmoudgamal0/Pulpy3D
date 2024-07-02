@@ -1,4 +1,5 @@
-from experiments.segmentation import Segmentation
+from experiments.pulp_segmentation import PulpSegmentation
+from experiments.ian_segmentation import IANSegmentation
 from experiments.semantic import Semantic
 from experiments.instance import Instance
 from experiments.multihead import MultiHead
@@ -10,8 +11,10 @@ class ExperimentFactory:
     self.debug = debug
 
   def get(self):
-    if self.name == 'Segmentation':
-      experiment = Segmentation(self.config, self.debug)
+    if self.name == 'PulpSegmentation':
+      experiment = PulpSegmentation(self.config, self.debug)
+    elif self.name == 'IANSegmentation':
+      experiment = IANSegmentation(self.config, self.debug)
     elif self.name == 'Semantic':
       experiment = Semantic(self.config, self.debug)
     elif self.name == 'Instance':
