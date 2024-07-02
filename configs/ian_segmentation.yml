@@ -16,8 +16,8 @@ data_loader:
   augmentations: ./configs/augmentation.yml
   preprocessing: ./configs/preprocessing.yaml
   batch_size: 4
-  max_length: 6
-  samples_per_volume: 1
+  max_length: 300
+  samples_per_volume: 10
   num_classes: 1
   num_workers: 8
   # shape of a single patch
