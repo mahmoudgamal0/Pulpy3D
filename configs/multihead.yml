@@ -16,7 +16,7 @@ data_loader:
   augmentations: ./configs/augmentation.yml
   preprocessing: ./configs/preprocessing.yaml
   batch_size: 4
-  max_length: 400
+  max_length: 300
   samples_per_volume: 10
   num_classes: 1
   num_workers: 8
@@ -31,7 +31,7 @@ data_loader:
   - 280
   - 160
   # uniform / label
-  sampler_type: label
+  sampler_type: uniform
   accumlation_iter: 16
 
 
