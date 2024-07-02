@@ -8,17 +8,17 @@ seed: 33
 
 # which experiment to execute: Segmentation or Generation
 experiment:
-  name: Segmentation
+  name: Semantic
 
 data_loader:
   dataset: ./datasets/Pulpy3D
   # which augmentations to use, see: augmentations.yaml
   augmentations: ./configs/augmentation.yml
   preprocessing: ./configs/preprocessing.yaml
-  num_classes: 2
+  num_classes: 3
   batch_size: 6
   max_length: 300
-  samples_per_volume: 30
+  samples_per_volume: 10
   num_workers: 8
   # shape of a single patch
   patch_shape:
@@ -37,10 +37,10 @@ data_loader:
 
 # which network to use
 model:
-  name: AttentionPosPadUNet3D
+  name: AttentionInstancePosPadUNet3D
 
 loss:
-  name: Jaccard
+  name: DiceCrossEntropy
 
 lr_scheduler:
   name: Plateau
