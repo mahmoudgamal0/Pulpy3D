@@ -1,7 +1,7 @@
 import torch
 from torch import nn
 from torch.nn import functional as F
-from models.networks_other import init_weights
+from models.MultiHead.networks_other import init_weights
 
 class GatingSignal(nn.Module):
   def __init__(self, in_size, out_size, kernel_size=(1,1,1), stride=(1,1,1), padding=(1,1,1), groups=1, padding_mode='replicate'):

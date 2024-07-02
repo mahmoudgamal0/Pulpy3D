@@ -162,3 +162,4 @@ cython_debug/
 datasets/Pulpy3D
 wandb/
 results/
+checkpoints/
