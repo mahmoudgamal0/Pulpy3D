@@ -37,10 +37,10 @@ data_loader:
 
 # which network to use
 model:
-  name: AttentionPosPadUNet3D
+  name: AttentionInstancePosPadUNet3D
 
 loss:
-  name: Jaccard
+  name: DiceCrossEntropy
 
 lr_scheduler:
   name: Plateau
