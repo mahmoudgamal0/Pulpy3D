@@ -32,9 +32,6 @@ class ModelFactory(nn.Module):
         elif self.model_name == 'InstanceUNETR':
             from models.InstanceUNETR import UNETR
             return UNETR(img_shape=(80,80,80), input_dim=self.in_ch, output_dim=self.num_classes, embed_dim=768, patch_size=16, num_heads=12, dropout=0.1)
-        elif self.model_name == 'FairyPosPadUNet3D':
-            from models.IANSegmentation.PosPadUNet3D import PosPadUNet3D
-            return PosPadUNet3D(self.num_classes, self.emb_shape, self.in_ch)   
         elif self.model_name == 'MultiHeadPosPadUNet3D':
             from models.MultiHead.AttentionPosPadUNet3D import PosPadUNet3D
             return PosPadUNet3D(self.num_classes, self.emb_shape, self.in_ch)       
