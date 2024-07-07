@@ -38,7 +38,7 @@ python main.py --config configs/segmentation.yml
 ```
 
 ## Dataset
-You can access the Pulpy3D dataset using this [link]()
+You can access the Pulpy3D dataset using this [link](https://drive.google.com/drive/folders/1M5iU1urLOp1rSxKOm7WCzodAKcZrqT5O?usp=sharing)
 
 The dataset is organized in the following manner
 ```md
